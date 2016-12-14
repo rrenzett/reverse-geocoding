@@ -1,13 +1,16 @@
-# reverse-geocoding project
+# Reverse-Geocoding Project
+---
 
-Maven and Java 1.8 must be installed and in your path to build and execute the project.
+## Requirements
 
-# Build Steps
+Maven and Java 1.8 must be installed and in your path to build and execute this project.
 
-1) Change directory to <project root> folder
-2) Run mvn install
+## Build Steps
 
-# Launch Steps
+1. Change directory to <project root> folder
+2. Run mvn install
 
-1) Change directory to the <project root>/target folder
-2) Run java -jar reverse-geocoding-0.0.1-SNAPSHOT.jar
+## Launch Steps
+
+1. Change directory to the <project root>/target folder
+2. Run java -jar reverse-geocoding-0.0.1-SNAPSHOT.jar
