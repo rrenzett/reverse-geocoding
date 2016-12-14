@@ -1,0 +1,53 @@
+{
+	"id": "08331bc6-5b74-9671-33c0-5a69993f10d9",
+	"name": "NCR",
+	"description": "",
+	"order": [
+		"ca15ed0f-8cf5-47f9-e67c-5ef563873573",
+		"f88ccff0-b1ac-b067-0ba1-44d8a40f2307"
+	],
+	"folders": [],
+	"timestamp": 1481664424549,
+	"owner": "500058",
+	"public": false,
+	"requests": [
+		{
+			"id": "ca15ed0f-8cf5-47f9-e67c-5ef563873573",
+			"headers": "Accept: application/json\n",
+			"url": "http://localhost:8080/address/?latitude=33.969601&longitude=-84.100033",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1481686493395,
+			"name": "good reverse-geocoding (NCR Location)",
+			"description": "",
+			"collectionId": "08331bc6-5b74-9671-33c0-5a69993f10d9",
+			"responses": []
+		},
+		{
+			"id": "f88ccff0-b1ac-b067-0ba1-44d8a40f2307",
+			"headers": "",
+			"url": "http://localhost:8080/address/cache/",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1481690932992,
+			"name": "reverse-geocoding cache",
+			"description": "",
+			"collectionId": "08331bc6-5b74-9671-33c0-5a69993f10d9",
+			"responses": []
+		}
+	]
+}
