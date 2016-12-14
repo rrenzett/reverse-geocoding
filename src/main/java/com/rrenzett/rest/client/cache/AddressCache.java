@@ -5,7 +5,17 @@ import java.util.LinkedList;
 
 public class AddressCache {
     private int cacheSize = 10;
-    private LinkedList<CacheItem> cache = new LinkedList<CacheItem>();
+    protected LinkedList<CacheItem> cache = new LinkedList<CacheItem>();
+
+    public AddressCache() {
+
+    }
+
+    protected AddressCache(int cacheSize) {
+        if (cacheSize > 0) {
+            this.cacheSize = cacheSize;
+        }
+    }
 
     public synchronized void add(String latitude, String longitude, String address, String time) {
         CacheItem item = new CacheItem(latitude, longitude, address, time);
