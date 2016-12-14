@@ -12,16 +12,12 @@ public class AddressCacheTest {
     private String testLat4 = "lat4";
     private String testLat5 = "lat5";
     private String testLat6 = "lat6";
-    private String testLat7 = "lat7";
-
     private String testLon1 = "lon1";
     private String testLon2 = "lon2";
     private String testLon3 = "lon3";
     private String testLon4 = "lon4";
     private String testLon5 = "lon5";
     private String testLon6 = "lon6";
-    private String testLon7 = "lon7";
-
     private String testAddr1 = "addr1";
     private String testAddr2 = "addr2";
     private String testAddr3 = "addr3";
@@ -29,7 +25,6 @@ public class AddressCacheTest {
     private String testAddr5 = "addr5";
     private String testAddr6 = "addr6";
     private String testAddr7 = "addr7";
-
     private String testTime1 = "time1";
     private String testTime2 = "time2";
     private String testTime3 = "time3";
