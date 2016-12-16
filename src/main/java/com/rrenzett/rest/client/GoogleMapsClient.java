@@ -28,7 +28,7 @@ public class GoogleMapsClient extends Client {
         List<NameValuePair> pairs = new ArrayList<NameValuePair>();
         pairs = new ArrayList<NameValuePair>();
         pairs.add(new BasicNameValuePair("key", key));
-        pairs.add(new BasicNameValuePair("latlng", latitude + "," + longitude));
+        pairs.add(new BasicNameValuePair("latlng", latitude.trim() + "," + longitude.trim()));
         return pairs;
     }
 
