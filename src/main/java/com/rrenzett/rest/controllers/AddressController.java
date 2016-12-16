@@ -35,8 +35,8 @@ public class AddressController {
     @RequestMapping(value = "/", method = RequestMethod.GET, produces = { "application/json" })
     @ResponseBody
     public ResponseEntity<String> getAddress(
-            @ApiParam("The latitude coodinate") @RequestParam(value = "latitude", required = true) String latitude,
-            @ApiParam("The longitude coodinate") @RequestParam(value = "longitude", required = true) String longitude)
+            @ApiParam("The latitude coordinate") @RequestParam(value = "latitude", required = true) String latitude,
+            @ApiParam("The longitude coordinate") @RequestParam(value = "longitude", required = true) String longitude)
             throws IOException, URISyntaxException, ParseException {
 
         if (latitude == null || latitude.trim().isEmpty() || longitude == null || longitude.trim().isEmpty()) {
@@ -48,7 +48,7 @@ public class AddressController {
         return new ResponseEntity<String>(buildJsonMsg(address), HttpStatus.OK);
     }
 
-    @ApiOperation(value = "Get the list of addresses", notes = "Use this to look at the list of recently looked up addresses.")
+    @ApiOperation(value = "Get list of recent addresses", notes = "Use this to look at the list of recently looked up addresses.")
     @ApiResponses({ @ApiResponse(code = 200, message = "The list of addresses is included in the response.") })
     @RequestMapping(value = "/cache/", method = RequestMethod.GET, produces = { "application/json" })
     @ResponseBody
